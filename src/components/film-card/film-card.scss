@@ -1,0 +1,68 @@
+.filmCardWrapper {
+  width: 80vw;
+  height: 200px;
+  display: flex;
+  border-radius: 30px;
+  padding: 20px;
+
+  background: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+  
+  margin: 0 auto;
+
+  transition: all ease-in-out 500ms;
+
+  .image {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: all ease-in-out 500ms;
+  }
+
+  .image:hover {
+    transform: scale(1.1);
+  }
+  
+  .contentWrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .contentTop {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      .title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+  
+      .year {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  
+
+    .genresWrapper {
+      font-size: 16px;
+      display: flex;
+
+      .genre {
+        color: #747474;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.filmCardWrapper:hover {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+}

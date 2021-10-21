@@ -1,0 +1,30 @@
+.paginationWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  cursor: pointer;
+
+  .dynamicTabsWrapper {
+    display: flex;
+    min-width: 200px;
+    width: max-content;
+    justify-content: center;
+  }
+
+  .first,
+  .last,
+  .tab {
+    text-align: center;
+    margin-right: 10px;
+    min-width: 30px;
+    width: max-content;
+    background-color: #222;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px;
+  }
+
+  .selected {
+    background-color: #747474;
+  }
+}
