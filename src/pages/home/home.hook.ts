@@ -46,8 +46,8 @@ const useHomeData = () => {
     page,
     isFetch = true,
   }: HandleSearchPropsType) => {
-    const i = page && (page % 2 === 0 || page - 1 === queryParams.page);
-    setIsFirstDicker(!!i);
+    const isShowFirstDicker = page && (page % 2 === 0 || page - 1 === queryParams.page);
+    setIsFirstDicker(!!isShowFirstDicker);
 
     const searchValues = {
       ...queryParams,
